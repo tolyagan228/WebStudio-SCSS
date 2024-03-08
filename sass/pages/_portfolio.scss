@@ -1,0 +1,105 @@
+.filter-btn {
+    color: var(--main-color);
+    min-width: 73px;
+    padding: 6px 22px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.48px;
+    background-color: var(--add-white);
+    border-radius: 4px;
+    border-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--add-white);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.projects {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.project-item-title {
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 1.08px;
+}
+
+.projects-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-link {
+    text-decoration: none;
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:focus,
+.project-link:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.div-project {
+    padding: 20px 24px;
+    border: 1px solid var(--add-white);
+}
+
+.projects-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.projects-item:hover .project-overlay {
+    transform: translateY(0);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--accent-color);
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-overlay {
+    color: var(--add-white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    padding: 63px 24px;
+}
+
+.project-subtitle {
+    color: var(--add-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+}
+
+.wrapper-project-img {
+    overflow: hidden;
+    position: relative;
+}
