@@ -1,5 +1,5 @@
 {
-    "liveSassCompile.settings.formats": [
+  "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
       "extensionName": ".css",
@@ -12,7 +12,6 @@
     }
   ],
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
-  "liveSassCompile.settings.generateMap":true,
-  "liveSassCompile.settings.autoprefix":"last 5 versions"
-
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": "last 5 versions"
 }
