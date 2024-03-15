@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--main-bd-color);
+    background-color: $main-bd-color;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -10,8 +10,8 @@
     flex-direction: column;
 }
 .contact-address {
-    color: var(--add-white);
-    background-color: var(--main-bd-color);
+    color: $add-white;
+    background-color: $main-bd-color;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;
@@ -19,8 +19,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-address:hover {
-    color: var(--accent-color);
+&contact-address:hover {
+    color: $accent-color;
     cursor: pointer;
 }
 
@@ -28,16 +28,16 @@
     font-style: normal;
 }
 .footer-link {
-    color: var(--add-color);
+    color: $add-color;
     font-size: 14px;
     letter-spacing: 0.42px;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
-    color: var(--accent-color);
+&footer-link:hover,
+&footer-link:focus {
+    color: $accent-color;
     cursor: pointer;
 }
 
@@ -54,19 +54,19 @@
 }
 
 .address-link {
-    color: var(--add-white);
+    color: $add-white;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-link:hover,
-.address-link:focus {
-    color: var(--accent-color);
+&address-link:hover,
+&address-link:focus {
+    color: $accent-color;
     cursor: pointer;
 }
 
 .join-subtitle {
-    color: var(--add-white);
+    color: $add-white;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -76,7 +76,7 @@
 }
 
 .soc-list-icon {
-    fill: var(--add-white);
+    fill: $add-white;
 }
 
 .soc-link {
@@ -91,9 +91,9 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-link:hover,
-.soc-link:focus {
-    background-color: var(--accent-color);
+&soc-link:hover,
+&soc-link:focus {
+    background-color: $accent-color;
     cursor: pointer;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .footer-form-text {
-    color: var(--add-white);
+    color: $add-white;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -136,21 +136,21 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form-input:hover,
-.footer-form-input:focus {
-    border-color: var(--accent-color);
+&footer-form-input:hover,
+&footer-form-input:focus {
+    border-color: $accent-color;
     outline: none;
 }
 
 .footer-form-btn {
-    color: var(--add-white);
+    color: $add-white;
     display: flex;
     align-items: center;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     padding-top: 10px;
@@ -161,7 +161,7 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form-btn::after {
+&footer-form-btn::after {
     content: "";
     display: inline-block;
     height: 24px;
@@ -171,8 +171,8 @@
     background-position: center;
 }
 
-.footer-form-btn:hover,
-.footer-form-btn:focus {
+&footer-form-btn:hover,
+&footer-form-btn:focus {
     cursor: pointer;
     opacity: 0.7;
 }
@@ -183,7 +183,7 @@
 }
 
 .order-title {
-    color: var(--main-color);
+    color: $main-color;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
@@ -197,7 +197,7 @@
 .form-label {
     display: flex;
     flex-direction: column;
-    color: var(--add-color);
+    color: $add-color;
     font-size: 12px;
     line-height: normal;
     letter-spacing: 0.12px;
@@ -234,9 +234,9 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover,
-.form-input:focus,
-.input-textarea:hover,
-.input-textarea:focus {
-    border-color: var(--accent-color);
+&form-input:hover,
+&form-input:focus,
+&input-textarea:hover,
+&input-textarea:focus {
+    border-color: $accent-color;
 }

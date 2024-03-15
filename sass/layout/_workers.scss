@@ -1,11 +1,11 @@
 .workers {
     padding-top: 94px;
     padding-bottom: 94px;
-    background: var(--add-white);
+    background: $add-white;
 }
 
 .workers-title {
-    color: var(--main-color);
+    color: $main-color;
     font-size: 36px;
     letter-spacing: 1.08px;
     text-align: center;
@@ -13,7 +13,7 @@
 }
 
 .workers-subtitle {
-    color: var(--add-color);
+    color: $add-color;
     text-align: center;
     letter-spacing: 0.48px;
     font-size: 16px;
@@ -21,7 +21,7 @@
 }
 
 .workers-item-title {
-    color: var(--main-color);
+    color: $main-color;
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.48px;
@@ -37,7 +37,7 @@
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
-    background: var(--add-white);
+    background: $add-white;
 }
 
 .workers-list {
@@ -61,18 +61,18 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.workers-link:hover,
-.workers-link:focus {
-    background-color: var(--accent-color);
+&workers-link:hover,
+&workers-link:focus {
+    background-color: $accent-color;
     cursor: pointer;
 }
 
 .icon-link {
-    fill: var(--add-color);
+    fill: $add-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.workers-link:focus .icon-link,
-.workers-link:hover .icon-link {
-    fill: var(--add-white);
+&workers-link:focus .icon-link,
+&workers-link:hover .icon-link {
+    fill: $add-white;
 }

@@ -9,7 +9,7 @@
 }
 
 .work-title {
-    color: var(--main-color);
+    color: $main-color;
     font-size: 36px;
     letter-spacing: 1.08px;
     text-align: center;
@@ -21,7 +21,7 @@
 }
 
 .work-text {
-    color: var(--add-white);
+    color: $add-white;
     text-align: center;
     font-size: 14px;
     font-weight: 700;

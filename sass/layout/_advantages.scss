@@ -9,7 +9,7 @@
 }
 
 .advantages-item-title {
-    color: var(--main-color);
+    color: $main-color;
     font-size: 14px;
     letter-spacing: 0.42px;
     flex-basis: calc((100% - 3 * 30px) / 4);
@@ -20,7 +20,7 @@
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-color: var(--add-white);
+    background-color: $add-white;
     background-position: center;
     background-repeat: no-repeat;
     display: block;
@@ -44,14 +44,14 @@
 }
 
 .advantages-subtitle {
-    color: var(--add-color);
+    color: $add-color;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
 
 .advantages-title {
-    color: var(--main-color);
+    color: $main-color;
     font-size: 14px;
     padding-bottom: 10px;
 }
