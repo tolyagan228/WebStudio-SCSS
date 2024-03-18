@@ -2,13 +2,13 @@
     padding-bottom: 94px;
 }
 
-.work-list {
+.work__list {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.work-title {
+.work__title {
     color: $main-color;
     font-size: 36px;
     letter-spacing: 1.08px;
@@ -16,11 +16,11 @@
     margin-bottom: 50px;
 }
 
-.work-item {
+.work__item {
     position: relative;
 }
 
-.work-text {
+.work__text {
     color: $add-white;
     text-align: center;
     font-size: 14px;

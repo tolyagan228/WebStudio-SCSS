@@ -1,4 +1,4 @@
-.hero-contant {
+.hero {
     color: $add-white;
     background-color: $main-bd-color;
     text-align: center;
@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.hero-contant-title {
+.hero__title {
     color: $add-white;
     font-size: 44px;
     font-weight: 900;
@@ -19,27 +19,4 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2.64px;
-}
-
-.hero-contant-btn {
-    color: $add-white;
-    background-color: $accent-color;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
-    border: none;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&hero-contant-btn:hover,
-&hero-contant-btn:focus {
-    cursor: pointer;
-    opacity: 0.7;
 }

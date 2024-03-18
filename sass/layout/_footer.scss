@@ -4,12 +4,12 @@
     padding-bottom: 60px;
     display: flex;
 }
-.contact-div {
+.footer-contacts {
     margin-right: 70px;
     display: flex;
     flex-direction: column;
 }
-.contact-address {
+.footer-contact__address {
     color: $add-white;
     background-color: $main-bd-color;
     font-size: 14px;
@@ -17,31 +17,29 @@
     letter-spacing: 0.42px;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            color: $accent-color;
+            cursor: pointer;
+        }
 }
 
-&contact-address:hover {
-    color: $accent-color;
-    cursor: pointer;
-}
-
-.contact-address {
+.footer-contact__address {
     font-style: normal;
 }
-.footer-link {
+.footer-contacts-link {
     color: $add-color;
     font-size: 14px;
     letter-spacing: 0.42px;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            color: $accent-color;
+            cursor: pointer;
+        }
 }
 
-&footer-link:hover,
-&footer-link:focus {
-    color: $accent-color;
-    cursor: pointer;
-}
-
-.footer-logo-link {
+.footer__logo {
     font-family: Raleway;
     font-size: 26px;
     letter-spacing: 0.78px;
@@ -53,19 +51,18 @@
     display: flex;
 }
 
-.address-link {
+.footer-contacts-link {
     color: $add-white;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            color: $accent-color;
+            cursor: pointer;
+        }
 }
 
-&address-link:hover,
-&address-link:focus {
-    color: $accent-color;
-    cursor: pointer;
-}
-
-.join-subtitle {
+.footer-soc__subtitle {
     color: $add-white;
     font-size: 14px;
     font-weight: 700;
@@ -75,11 +72,11 @@
     margin-bottom: 20px;
 }
 
-.soc-list-icon {
+.footer-soc__link {
     fill: $add-white;
 }
 
-.soc-link {
+.footer-soc__link {
     border-radius: 50%;
     padding: 12px;
     display: flex;
@@ -89,31 +86,30 @@
     width: 44px;
     height: 44px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            background-color: $accent-color;
+            cursor: pointer;
+        }
 }
 
-&soc-link:hover,
-&soc-link:focus {
-    background-color: $accent-color;
-    cursor: pointer;
-}
-
-.join-soc-list {
+.footer-soc__list {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.soc-div {
+.footer-soc {
     padding-top: 10px;
 }
 
-.footer-form {
+.footer-form-div__form {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.footer-form-text {
+.footer-form-div__text {
     color: $add-white;
     font-size: 14px;
     font-weight: 700;
@@ -123,7 +119,7 @@
     margin-bottom: 20px;
 }
 
-.footer-form-input {
+.footer-form-div--input {
     color: rgba(255, 255, 255, 0.6);
     line-height: 20px;
     letter-spacing: 0.48px;
@@ -134,47 +130,11 @@
     padding: 15px;
     width: 358px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&footer-form-input:hover,
-&footer-form-input:focus {
-    border-color: $accent-color;
-    outline: none;
-}
-
-.footer-form-btn {
-    color: $add-white;
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background: $accent-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 28px;
-    gap: 10px;
-    padding-right: 28px;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&footer-form-btn::after {
-    content: "";
-    display: inline-block;
-    height: 24px;
-    width: 24px;
-    background-image: url(../images/telegram_new.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-&footer-form-btn:hover,
-&footer-form-btn:focus {
-    cursor: pointer;
-    opacity: 0.7;
+    &:hover,
+        &:focus {
+            border-color: $accent-color;
+            outline: none;
+        }
 }
 
 .footer-form-div {
@@ -182,7 +142,7 @@
     padding-top: 10px;
 }
 
-.order-title {
+.modal-title {
     color: $main-color;
     text-align: center;
     font-family: Roboto;
@@ -194,7 +154,7 @@
     margin-bottom: 12px;
 }
 
-.form-label {
+.modal-label {
     display: flex;
     flex-direction: column;
     color: $add-color;
@@ -204,11 +164,11 @@
     position: relative;
 }
 
-.form-label:not(:first-child) {
+.modal-label:not(:first-child) {
     margin-top: 10px;
 }
 
-.input-textarea {
+.modal-textarea {
     color: rgba(117, 117, 117, 0.5);
     line-height: normal;
     letter-spacing: 0.12px;
@@ -221,9 +181,13 @@
     resize: none;
     margin-top: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            border-color: $accent-color;
+        }
 }
 
-.form-input {
+.modal-input {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     width: 448px;
@@ -232,11 +196,8 @@
     padding: 11px 0 11px 42px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&form-input:hover,
-&form-input:focus,
-&input-textarea:hover,
-&input-textarea:focus {
-    border-color: $accent-color;
+    &:hover,
+        &:focus {
+            border-color: $accent-color;
+        }
 }

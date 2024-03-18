@@ -9,10 +9,10 @@
 .logo-link {
     text-decoration: none;
 }
-.current.nav-link {
+.nav__link--current {
     color: $accent-color;
 }
-&current::after {
+.nav__link--current::after { 
     content: "";
     display: block;
     height: 4px;
@@ -23,17 +23,17 @@
     border-radius: 2px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-&current:hover:after {
+.nav__link--current:hover:after {
     transform: translateY(-20px);
 }
 .logo-accent {
     color: $accent-color;
 }
-.nav-list {
+.nav__list {
     display: flex;
     gap: 50px;
 }
-.nav-link {
+.nav__link {
     color: $main-color;
     font-size: 14px;
     font-weight: 500;
@@ -41,11 +41,11 @@
     text-decoration: none;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-&nav-link:hover,
-&nav-link:focus {
-    color: $accent-color;
-    cursor: pointer;
+    &:hover,
+        &:focus {
+            color: $accent-color;
+            cursor: pointer;
+        }
 }
 .contact-list {
     color: $add-color;
@@ -58,7 +58,7 @@
     gap: 50px;
 }
 
-.contact-link {
+.contact-list__link {
     color: $add-color;
     font-size: 14px;
     font-weight: 500;
@@ -68,25 +68,23 @@
     align-items: center;
     gap: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            color: $accent-color;
+            cursor: pointer;
+        }
 }
 
-&contact-link:hover,
-&contact-link:focus {
-    color: $accent-color;
-    cursor: pointer;
-}
-
-.contacts-list-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.list-icon {
+.contact-list__icon {
     display: inline-block;
     fill: #757575;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&contact-link:hover .list-icon,
-&contact-link:focus .list-icon {
-    fill: $accent-color;
+    &contact-list__link:hover &,
+        &contact-list__link:focus & {
+            fill: $accent-color;
+        }
 }
