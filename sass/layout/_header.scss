@@ -26,9 +26,6 @@
 .nav__link--current:hover:after {
     transform: translateY(-20px);
 }
-.logo-accent {
-    color: $accent-color;
-}
 .nav__list {
     display: flex;
     gap: 50px;

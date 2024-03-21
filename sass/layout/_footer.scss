@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
 }
-.footer-contact__address {
+.footer-contacts__address {
     color: $add-white;
     background-color: $main-bd-color;
     font-size: 14px;
@@ -23,10 +23,10 @@
         }
 }
 
-.footer-contact__address {
+.footer-contacts__address {
     font-style: normal;
 }
-.footer-contacts-link {
+.footer-contacts__link {
     color: $add-color;
     font-size: 14px;
     letter-spacing: 0.42px;
@@ -39,19 +39,11 @@
         }
 }
 
-.footer__logo {
-    font-family: Raleway;
-    font-size: 26px;
-    letter-spacing: 0.78px;
-    color: var(--add-white);
-    margin-bottom: 20px;
-}
-
 .footer .container {
     display: flex;
 }
 
-.footer-contacts-link {
+.footer-contacts__link {
     color: $add-white;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -142,7 +134,7 @@
     padding-top: 10px;
 }
 
-.modal-title {
+.modal__title {
     color: $main-color;
     text-align: center;
     font-family: Roboto;
@@ -154,7 +146,7 @@
     margin-bottom: 12px;
 }
 
-.modal-label {
+.modal__label {
     display: flex;
     flex-direction: column;
     color: $add-color;
@@ -164,11 +156,11 @@
     position: relative;
 }
 
-.modal-label:not(:first-child) {
+.modal__label:not(:first-child) {
     margin-top: 10px;
 }
 
-.modal-textarea {
+.modal__textarea {
     color: rgba(117, 117, 117, 0.5);
     line-height: normal;
     letter-spacing: 0.12px;
@@ -187,7 +179,7 @@
         }
 }
 
-.modal-input {
+.modal__input {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     width: 448px;

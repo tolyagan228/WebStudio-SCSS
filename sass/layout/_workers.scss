@@ -46,7 +46,7 @@
     gap: 30px;
 }
 
-.workers__list {
+.workers-list {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -62,7 +62,8 @@
     &:hover,
         &:focus {
             background-color: $accent-color;
-            cursor: po&
+            cursor: pointer;
+}
 }
 
 .icon__link {

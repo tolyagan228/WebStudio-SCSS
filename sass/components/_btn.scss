@@ -9,6 +9,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn {
+    @extend %btn;
     line-height: 1.87;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -20,8 +21,10 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             opacity: 0.7;
         }
+        
 }
 .modal__btn {
+    @extend %btn;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
@@ -37,6 +40,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 }
 .footer-form-div__btn {
+    @extend %btn;
     display: flex;
     align-items: center;
     line-height: 30px;
