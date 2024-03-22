@@ -1,57 +1,57 @@
 .advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages__list {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .advantages__item {
-    color: $main-color;
-    font-size: 14px;
-    letter-spacing: 0.42px;
-    flex-basis: calc((100% - 3 * 30px) / 4);
+  color: $main-color;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .advantages__item::before {
-    content: "";
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: $add-white;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    margin-bottom: 30px;
+  content: "";
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $bg-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .advantages__item:nth-child(1)::before {
-    background-image: url(../images/group_svg1_svg.svg);
+  background-image: url(../images/group_svg1_svg.svg);
 }
 
 .advantages__item:nth-child(2)::before {
-    background-image: url(../images/clock_svg2_svg.svg);
+  background-image: url(../images/clock_svg2_svg.svg);
 }
 
 .advantages__item:nth-child(3)::before {
-    background-image: url(../images/diagram_svg3_svg.svg);
+  background-image: url(../images/diagram_svg3_svg.svg);
 }
 
 .advantages__item:nth-child(4)::before {
-    background-image: url(../images/astronaut_svg4_svg.svg);
+  background-image: url(../images/astronaut_svg4_svg.svg);
 }
 
 .advantages__subtitle {
-    color: $add-color;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+  color: $add-color;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
 }
 
 .advantages__title {
-    color: $main-color;
-    font-size: 14px;
-    padding-bottom: 10px;
+  color: $main-color;
+  font-size: 14px;
+  padding-bottom: 10px;
 }

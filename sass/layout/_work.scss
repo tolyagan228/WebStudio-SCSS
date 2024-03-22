@@ -1,37 +1,37 @@
 .work {
-    padding-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .work__list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .work__title {
-    color: $main-color;
-    font-size: 36px;
-    letter-spacing: 1.08px;
-    text-align: center;
-    margin-bottom: 50px;
+  color: $main-color;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .work__item {
-    position: relative;
+  position: relative;
 }
 
 .work__text {
-    color: $add-white;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    background: rgba(47, 48, 58, 0.8);
-    position: absolute;
-    text-align: center;
-    width: 370px;
-    padding: 27px 0;
-    bottom: 0px;
+  color: $add-white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  text-align: center;
+  width: 370px;
+  padding: 27px 0;
+  bottom: 0px;
 }

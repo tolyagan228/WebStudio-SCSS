@@ -1,22 +1,24 @@
 .hero {
-    color: $add-white;
-    background-color: $main-bd-color;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/peaple_img.jpg);
-    text-align: center;
+  color: $add-white;
+  background-color: $main-bd-color;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/peaple_img.jpg);
+  text-align: center;
 }
 
 .hero__title {
-    color: $add-white;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2.64px;
+  color: $add-white;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2.64px;
 }

@@ -1,68 +1,66 @@
 %btn {
-color: $add-white;
-background: $accent-color;
-font-weight: 700;
-letter-spacing: 0.96px;
-border-radius: 4px;
-font-size: 16px;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $add-white;
+  background: $accent-color;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn {
-    @extend %btn;
-    line-height: 1.87;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
-    border: none;
-    &:hover,
-        &:focus {
-            cursor: pointer;
-            opacity: 0.7;
-        }
-        
+  @extend %btn;
+  line-height: 1.87;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.7;
+  }
 }
 .modal__btn {
-    @extend %btn;
-    text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    line-height: 30px;
-    padding: 10px 52px 10px 52px;
-    border: none;
-    display: block;
-    margin: 0 auto;
-    &:hover,
-        &:focus {
-            cursor: pointer;
-            opacity: 0.7;
-        }
+  @extend %btn;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 30px;
+  padding: 10px 52px 10px 52px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.7;
+  }
 }
 .footer-form-div__btn {
-    @extend %btn;
-    display: flex;
-    align-items: center;
-    line-height: 30px;
-    border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 28px;
-    gap: 10px;
-    padding-right: 28px;
-    &:hover,
-        &:focus {
-            cursor: pointer;
-            opacity: 0.7;
-        }
-                &::after {
-                    content: "";
-                    display: inline-block;
-                    height: 24px;
-                    width: 24px;
-                    background-image: url(../images/telegram_new.svg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
+  @extend %btn;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  gap: 10px;
+  padding-right: 28px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/telegram_new.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-
