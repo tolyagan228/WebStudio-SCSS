@@ -9,6 +9,7 @@
 }
 
 .advantages__item {
+  @include flex-basis(30px, 4);
   color: $main-color;
   font-size: 14px;
   letter-spacing: 0.42px;

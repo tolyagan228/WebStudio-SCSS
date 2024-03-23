@@ -4,11 +4,8 @@
 }
 
 .customer__title {
-  color: $main-color;
-  text-align: center;
-  font-size: 36px;
+  @extend %title;
   line-height: normal;
-  letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
 

@@ -55,13 +55,10 @@
 }
 
 .footer-soc__subtitle {
-  color: $add-white;
-  font-size: 14px;
+  @extend %footer-title;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .footer-soc__link {
@@ -102,13 +99,10 @@
 }
 
 .footer-form-div__text {
-  color: $add-white;
-  font-size: 14px;
+  @extend %footer-title;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .footer-form-div--input {
