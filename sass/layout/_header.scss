@@ -27,8 +27,7 @@
   transform: translateY(-20px);
 }
 .nav__list {
-  display: flex;
-  gap: 50px;
+  @include flex(50px);
 }
 .nav__link {
   color: $main-color;

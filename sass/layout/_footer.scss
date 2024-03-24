@@ -83,9 +83,7 @@
 }
 
 .footer-soc__list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  @include flex(10px);
 }
 
 .footer-soc {
@@ -93,9 +91,7 @@
 }
 
 .footer-form-div__form {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  @include flex(12px);
 }
 
 .footer-form-div__text {

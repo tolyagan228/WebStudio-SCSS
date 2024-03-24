@@ -10,9 +10,8 @@
 }
 
 .customer__list {
-  display: flex;
+  @include flex(30px);
   justify-content: center;
-  gap: 30px;
 }
 
 .customer__icon {
