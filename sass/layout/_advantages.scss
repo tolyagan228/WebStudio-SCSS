@@ -14,18 +14,9 @@
   letter-spacing: 0.42px;
 }
 
-$images: (
-  "group_svg1_svg.svg",
-  "clock_svg2_svg.svg",
-  "diagram_svg3_svg.svg",
-  "astronaut_svg4_svg.svg"
-);
-
 @for $i from 1 through 4 {
-  $class: nth(('group', 'clock', 'diagram', 'astronaut'), $i);
-
   .advantages__item:nth-child(#{$i})::before {
-    background-image: url(../images/#{$class}_svg#{$i}_svg.svg);
+    background-image: url(../images/advantages_svg#{$i}.svg);
   }
 }
 
