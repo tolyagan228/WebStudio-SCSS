@@ -311,20 +311,32 @@ img {
   letter-spacing: 0.42px;
 }
 
+.advantages__item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 30px;
+}
+
 .advantages__item:nth-child(1)::before {
-  background-image: url(../images/group_svg1_svg.svg);
+  background-image: url(../images/advantages-svg-1.svg);
 }
 
 .advantages__item:nth-child(2)::before {
-  background-image: url(../images/clock_svg2_svg.svg);
+  background-image: url(../images/advantages-svg-2.svg);
 }
 
 .advantages__item:nth-child(3)::before {
-  background-image: url(../images/diagram_svg3_svg.svg);
+  background-image: url(../images/advantages-svg-3.svg);
 }
 
 .advantages__item:nth-child(4)::before {
-  background-image: url(../images/astronaut_svg4_svg.svg);
+  background-image: url(../images/advantages-svg-4.svg);
 }
 
 .advantages__subtitle {
