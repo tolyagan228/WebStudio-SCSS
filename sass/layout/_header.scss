@@ -1,10 +1,38 @@
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  @media screen and (min-width: 480px) {
+      width: 480px;
+      padding-top: 16px;
+        padding-bottom: 16px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-top: 26px;
+        padding-bottom: 26px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      padding-top: 24px;
+        padding-bottom: 25px;
+    }
 }
 .header .container {
   display: flex;
   align-items: center;
+    @media screen and (min-width: 480px) {
+        
+      }
+    
+      @media screen and (min-width: 768px) {
+        
+      }
+    
+      @media screen and (min-width: 1200px) {
+        
+      }
 }
 .logo-link {
   text-decoration: none;
@@ -28,6 +56,18 @@
 }
 .nav__list {
   @include flex(50px);
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        display: none;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        width: 1200px;
+      }
 }
 .nav__link {
   color: $main-color;
