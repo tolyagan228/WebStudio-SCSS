@@ -12,6 +12,14 @@
 .customer__list {
   @include flex(30px);
   justify-content: center;
+  @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;;
+    }
 }
 
 .customer__icon {
