@@ -35,9 +35,14 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background: $add-white;
-  flex-basis: (100% - 30) / 2;
+  @include flex-basis(30px, 2);
+  @media screen and (min-width:768px) {
+    @include flex-basis(30px, 2);
+  }
+    @media screen and (min-width:1200px) {
+      @include flex-basis(30px, 4);
+    }
 }
-
 .workers-soc-list {
   display: flex;
   justify-content: center;

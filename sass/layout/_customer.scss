@@ -10,16 +10,21 @@
 }
 
 .customer__list {
-  @include flex(30px);
-  justify-content: center;
-  @media screen and (min-width: 480px) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;;
-    }
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  padding-top: 50px;
+  flex-wrap: wrap;
+
+}
+
+.customer__item {
+  @include flex-basis(20px, 3);
+
+  @media screen and (min-width: 768px) {
+    @include flex-basis(30px, 2);
+  }
 }
 
 .customer__icon {
