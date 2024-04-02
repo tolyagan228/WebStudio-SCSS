@@ -67,17 +67,17 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -194,6 +194,12 @@ img {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .btn-menu {
+    display: none;
+  }
+}
+
 .nav__link--current {
   color: #2196f3;
 }
@@ -225,6 +231,7 @@ img {
   display: flex;
   gap: 50px;
   display: none;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .nav__list {
@@ -257,16 +264,19 @@ img {
   text-decoration: none;
   display: none;
   margin-left: auto;
-  gap: 50px;
 }
 @media screen and (min-width: 768px) {
   .contact-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
   }
 }
-
 .contact-list__link {
   color: #757575;
   font-size: 14px;
@@ -317,7 +327,7 @@ img {
 
 .hero__title {
   color: #ffffff;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.36;
   margin-bottom: 30px;
@@ -355,7 +365,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -368,9 +379,8 @@ img {
 }
 
 .advantages__item {
-  -ms-flex-preferred-size: calc((100% - 30px * (2 - 1)) / 2);
-      flex-basis: calc((100% - 30px * (2 - 1)) / 2);
-  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   color: #212121;
   font-size: 14px;
   letter-spacing: 0.42px;
@@ -392,6 +402,7 @@ img {
   background-repeat: no-repeat;
   display: block;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .advantages__item:nth-child(1)::before {
@@ -417,7 +428,6 @@ img {
   letter-spacing: 0.42px;
   margin-bottom: 10px;
   margin-top: 30px;
-  text-align: center;
 }
 
 .advantages__title {
@@ -428,7 +438,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .advantages__title {
-    text-align: right;
+    text-align: left;
   }
 }
 
@@ -477,13 +487,13 @@ img {
 }
 
 .workers {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: #F5F4FA;
+  padding: 60px 0;
 }
 
 .workers-section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 
 .workers__subtitle {
@@ -504,7 +514,7 @@ img {
 
 .div__workers {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .workers__item {
@@ -512,8 +522,7 @@ img {
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
-  -ms-flex-preferred-size: calc((100% - 30px * (2 - 1)) / 2);
-      flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .workers__item {
@@ -545,15 +554,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
-}
-@media screen and (min-width: 480px) {
-  .workers-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 @media screen and (min-width: 768px) {
   .workers-list {
@@ -568,8 +573,6 @@ img {
 @media screen and (min-width: 1200px) {
   .workers-list {
     width: 1200px;
-    -ms-flex-preferred-size: 2.5%;
-        flex-basis: 2.5%;
   }
 }
 
@@ -583,6 +586,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 16px;
+  gap: 10px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

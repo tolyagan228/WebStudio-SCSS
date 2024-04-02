@@ -9,6 +9,11 @@
 .logo-link {
   text-decoration: none;
 }
+.btn-menu {
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
 .nav__link--current {
   color: $accent-color;
 }
@@ -29,6 +34,7 @@
 .nav__list {
   @include flex(50px);
       display: none;
+      margin-right: auto;
       @media screen and (min-width: 768px) {
        display: flex;
       }
@@ -55,10 +61,14 @@
   text-decoration: none;
   display: none;
   margin-left: auto;
-  gap: 50px;
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
+     @media screen and (min-width: 1200px) {
+      //  display: flex;
+     }
 }
 
 .contact-list__link {
