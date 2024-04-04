@@ -5,6 +5,7 @@
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .logo-link {
   text-decoration: none;
@@ -12,6 +13,12 @@
 .btn-menu {
   @media screen and (min-width:768px) {
     display: none;
+  }
+}
+.nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 }
 .nav__link--current {
@@ -67,7 +74,8 @@
     gap: 10px;
   }
      @media screen and (min-width: 1200px) {
-      //  display: flex;
+       flex-direction: row;
+       gap: 30px;
      }
 }
 
