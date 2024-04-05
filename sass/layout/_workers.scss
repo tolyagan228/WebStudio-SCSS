@@ -10,6 +10,9 @@
   // margin-bottom: 50px;
   margin-bottom: 30px;
   font-size: 28px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .workers__subtitle {
@@ -61,10 +64,6 @@
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap; 
-    }
-  
-    @media screen and (min-width: 1200px) {
-      
     }
 }
 
