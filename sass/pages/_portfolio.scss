@@ -27,7 +27,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  @media screen and (min-width:768px) {
+  @media screen and (max-width:768px) {
+    max-width: 326px;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -67,7 +68,6 @@
     @media screen and (min-width: 768px) {
       flex-direction: row;
         flex-wrap: wrap;
-        @include flex-basis(30px, 2);
     }
 }
 
@@ -85,6 +85,12 @@
 .projects__item {
   @include flex-basis(60px, 3);
   position: relative;
+  @media screen and (min-width:768px) {
+    @include flex-basis(30px, 2);
+  }
+     @media screen and (min-width: 1200px) {
+          @include flex-basis(30px, 3);
+     }
 }
 
 .project__overlay {
