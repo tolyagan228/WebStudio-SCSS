@@ -5,9 +5,11 @@
   display: flex;
 }
 .footer-contacts {
-  margin-right: 70px;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width:1200px) {
+  margin-right: 70px;
+    }
 }
 .footer-contacts__address {
   color: $add-white;
@@ -25,6 +27,11 @@
 
 .footer-contacts__address {
   font-style: normal;
+  text-align: center;
+  @media screen and (min-width:1200px) {
+    text-align: left;
+
+  }
 }
 .footer-contacts__link {
   color: $add-color;
@@ -41,6 +48,21 @@
 
 .footer .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  @media screen and (min-width:768px) {
+    flex-direction: row;
+    column-gap: 165px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+    @media screen and (min-width:1200px) {
+      flex-direction: row;
+      gap: 70px;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
 }
 
 .footer__link {
@@ -88,10 +110,13 @@
 
 .footer-soc {
   padding-top: 10px;
+  text-align: center
 }
 
 .footer-form-div__form {
   @include flex(12px);
+  display: block;
+  flex-direction: column;
 }
 
 .footer-form-div__text {
@@ -99,6 +124,7 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .footer-form-div--input {
@@ -112,6 +138,7 @@
   padding: 15px;
   width: 358px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
   &:hover,
   &:focus {
     border-color: $accent-color;

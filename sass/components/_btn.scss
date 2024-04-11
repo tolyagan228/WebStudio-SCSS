@@ -45,6 +45,8 @@
   @extend %btn;
   display: flex;
   align-items: center;
+  display: block;
+  margin: 0 auto;
   line-height: 30px;
   border: none;
   padding-top: 10px;
