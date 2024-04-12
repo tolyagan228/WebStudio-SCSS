@@ -6,9 +6,6 @@
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width:1200px) {
-  margin-right: 70px;
-    }
 }
 .footer-contacts__address {
   color: $add-white;
@@ -129,6 +126,9 @@
   line-height: normal;
   text-transform: uppercase;
   text-align: center;
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 }
 
 .footer-form-div--input {

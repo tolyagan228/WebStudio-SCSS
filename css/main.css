@@ -749,11 +749,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 1200px) {
-  .footer-contacts {
-    margin-right: 70px;
-  }
-}
 
 .footer-contacts__address {
   color: #ffffff;
@@ -918,6 +913,11 @@ img {
   line-height: normal;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-div__text {
+    text-align: left;
+  }
 }
 
 .footer-form-div--input {
