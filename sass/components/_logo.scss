@@ -12,6 +12,9 @@
   color: $add-white;
   margin-bottom: 20px;
   text-align: center;
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 }
 .logo__accent {
   color: $accent-color;

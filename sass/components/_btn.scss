@@ -22,7 +22,7 @@
     opacity: 0.7;
   }
     @media screen and (min-width:1200px) {
-      padding: 10px, 32px, 10px, 32px;
+      padding: 10px 32px 10px 32px;
     }
 }
 .modal__btn {
@@ -45,7 +45,6 @@
   @extend %btn;
   display: flex;
   align-items: center;
-  display: block;
   margin: 0 auto;
   line-height: 30px;
   border: none;
