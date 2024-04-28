@@ -441,7 +441,9 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -557,16 +559,16 @@ img {
 .menu-contact-list__link:hover, .menu-contact-list__link:focus {
   color: #2196f3;
   cursor: pointer;
-  font-size: 24px;
-}
-@media screen and (min-width: 480px) {
-  .menu-contact-list__link {
-    font-size: 34px;
-  }
+  font-size: 34px;
 }
 
 .mobile-soc__link {
   color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .mobile-soc__link {
+    font-size: 18px;
+  }
 }
 
 .mobile-soc__list {
@@ -576,7 +578,7 @@ img {
   gap: 10px;
   font-size: 11px;
   letter-spacing: 0.02em;
-  padding-top: 64px;
+  margin-top: 64px;
 }
 
 @media screen and (min-width: 480px) {
